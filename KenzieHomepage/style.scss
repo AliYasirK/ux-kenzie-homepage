@@ -1,0 +1,251 @@
+body {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.hero {
+  h1 h2 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    font-weight: initial;
+  }
+  h1 {
+    font-size: 29px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .hero_iframe {
+    width: 16rem;
+    height: 16rem;
+    text-align: center;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  li {
+    display: inline-block;
+    margin: 0 2rem 0 0;
+    text-decoration: underline;
+  }
+  .nav_li {
+    background-color: rgb(55, 102, 230);
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    width: 9em;
+    text-align: center;
+    display: inline-block;
+
+    a {
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+signup-form form input[type="submit"] {
+  border: none;
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 2rem;
+  width: 8em;
+  text-align: center;
+  display: inline-block;
+}
+
+.quotes {
+  .quotes_one,
+  .quotes_two {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    img {
+      margin: auto;
+      grid-column-start: 1;
+      width: 50%;
+    }
+
+    p {
+      grid-column-end: 3;
+      font-size: 15px;
+    }
+  }
+}
+
+.dates {
+  .dates_button {
+    background-color: white;
+    color: purple;
+  }
+
+  .dates_one,
+  .dates_two,
+  .dates_three {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+
+    .dates_img {
+      width: 100px;
+    }
+  }
+}
+
+.break {
+  padding: 3px;
+  text-align: center;
+  height: 100px;
+  background-color: rgba(68, 66, 66, 0.445);
+}
+
+.meet {
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .list_img {
+    width: 50%;
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".card_iframe .card_text";
+
+  .card_iframe {
+    width: 100%;
+  }
+  .card_text {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 550px) {
+  body {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+
+  .hero {
+    h1 h2 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      font-weight: initial;
+    }
+    h1 {
+      font-size: 70px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+    .hero_iframe {
+      width: 30rem;
+      height: 25rem;
+      text-align: center;
+    }
+  }
+
+  signup-form form input[type="submit"] {
+    border: none;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2rem;
+    width: 8em;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .quotes {
+    display: grid;
+    grid-template-columns: 400px 400px;
+
+    .quotes_one {
+      grid-row-start: 1;
+    }
+
+    .quotes_two {
+      grid-row-end: 2;
+    }
+
+    img {
+      margin: auto;
+
+      width: 50%;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .dates {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-areas: ".dates_one .dates_two .dates_three";
+    .dates_button {
+      background-color: white;
+      color: purple;
+    }
+
+    .dates_img {
+      width: 100px;
+    }
+  }
+
+  .break {
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+    background-color: rgba(68, 66, 66, 0.445);
+  }
+
+  .meet {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-areas: ".list_l1 .list_l2 .list_l3 .list_l4";
+
+    .list_img {
+      width: 160px;
+    }
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".card_iframe .card_text";
+
+    .card_iframe {
+      width: 100%;
+    }
+    .card_text {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}

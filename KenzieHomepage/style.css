@@ -1,0 +1,261 @@
+body {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.hero h1 h2 {
+  text-align: center;
+}
+
+.hero h2 {
+  text-align: center;
+  font-weight: initial;
+}
+
+.hero h1 {
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.hero .hero_iframe {
+  width: 16rem;
+  height: 16rem;
+  text-align: center;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 2rem 0 0;
+  text-decoration: underline;
+}
+
+.nav .nav_li {
+  background-color: #3766e6;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  width: 9em;
+  text-align: center;
+  display: inline-block;
+}
+
+.nav .nav_li a {
+  color: white;
+  font-weight: bold;
+}
+
+signup-form form input[type="submit"] {
+  border: none;
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 2rem;
+  width: 8em;
+  text-align: center;
+  display: inline-block;
+}
+
+.quotes .quotes_one,
+.quotes .quotes_two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr;
+      grid-template-columns: 100px 1fr;
+}
+
+.quotes .quotes_one img,
+.quotes .quotes_two img {
+  margin: auto;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  width: 50%;
+}
+
+.quotes .quotes_one p,
+.quotes .quotes_two p {
+  grid-column-end: 3;
+  font-size: 15px;
+}
+
+.dates .dates_button {
+  background-color: white;
+  color: purple;
+}
+
+.dates .dates_one,
+.dates .dates_two,
+.dates .dates_three {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.dates .dates_one .dates_img,
+.dates .dates_two .dates_img,
+.dates .dates_three .dates_img {
+  width: 100px;
+}
+
+.break {
+  padding: 3px;
+  text-align: center;
+  height: 100px;
+  background-color: rgba(68, 66, 66, 0.445);
+}
+
+.meet {
+  text-align: center;
+}
+
+.list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.list .list_img {
+  width: 50%;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: ".card_iframe .card_text";
+}
+
+.card .card_iframe {
+  width: 100%;
+}
+
+.card .card_text {
+  font-size: 10px;
+}
+
+@media (min-width: 550px) {
+  body {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+  .hero h1 h2 {
+    text-align: center;
+  }
+  .hero h2 {
+    text-align: center;
+    font-weight: initial;
+  }
+  .hero h1 {
+    font-size: 70px;
+    font-weight: bold;
+  }
+  .hero h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero .hero_iframe {
+    width: 30rem;
+    height: 25rem;
+    text-align: center;
+  }
+  signup-form form input[type="submit"] {
+    border: none;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2rem;
+    width: 8em;
+    text-align: center;
+    display: inline-block;
+  }
+  .quotes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 400px 400px;
+        grid-template-columns: 400px 400px;
+  }
+  .quotes .quotes_one {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  .quotes .quotes_two {
+    grid-row-end: 2;
+  }
+  .quotes img {
+    margin: auto;
+    width: 50%;
+  }
+  .quotes p {
+    font-size: 15px;
+  }
+  .dates {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 200px;
+        grid-template-rows: 200px;
+        grid-template-areas: ".dates_one .dates_two .dates_three";
+  }
+  .dates .dates_button {
+    background-color: white;
+    color: purple;
+  }
+  .dates .dates_img {
+    width: 100px;
+  }
+  .break {
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+    background-color: rgba(68, 66, 66, 0.445);
+  }
+  .meet {
+    text-align: center;
+    font-size: 15px;
+  }
+  .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 150px;
+        grid-template-columns: 150px;
+        grid-template-areas: ".list_l1 .list_l2 .list_l3 .list_l4";
+  }
+  .list .list_img {
+    width: 160px;
+  }
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: ".card_iframe .card_text";
+  }
+  .card .card_iframe {
+    width: 100%;
+  }
+  .card .card_text {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
