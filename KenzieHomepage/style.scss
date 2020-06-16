@@ -136,6 +136,31 @@ signup-form form input[type="submit"] {
 }
 
 @media (min-width: 550px) {
+  .card_parent {
+    display: flex;
+    justify-content: center;
+  }
+  .list_parent {
+    display: flex;
+    justify-content: center;
+  }
+  .meet_parent {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .dates_parent {
+    display: flex;
+    justify-content: center;
+  }
+  .meet_parent {
+    display: flex;
+    justify-content: center;
+  }
+  .quotes_parent {
+    display: flex;
+    justify-content: center;
+  }
   body {
     font-family: "Nunito", sans-serif;
     text-align: center;
@@ -221,6 +246,7 @@ signup-form form input[type="submit"] {
   }
 
   .meet {
+    width: 900px;
     text-align: center;
     font-size: 15px;
   }
@@ -246,6 +272,7 @@ signup-form form input[type="submit"] {
     .card_text {
       font-size: 15px;
       text-align: center;
+      width: 300px;
     }
   }
 }

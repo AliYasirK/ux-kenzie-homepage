@@ -34,11 +34,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .nav li {
@@ -79,14 +79,14 @@ signup-form form input[type="submit"] {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100px 1fr;
-  grid-template-columns: 100px 1fr;
+      grid-template-columns: 100px 1fr;
 }
 
 .quotes .quotes_one img,
 .quotes .quotes_two img {
   margin: auto;
   -ms-grid-column: 1;
-  grid-column-start: 1;
+      grid-column-start: 1;
   width: 50%;
 }
 
@@ -130,7 +130,7 @@ signup-form form input[type="submit"] {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .list .list_img {
@@ -141,8 +141,8 @@ signup-form form input[type="submit"] {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: ".card_iframe .card_text";
+      grid-template-rows: 1fr;
+      grid-template-areas: ".card_iframe .card_text";
 }
 
 .card .card_iframe {
@@ -154,6 +154,55 @@ signup-form form input[type="submit"] {
 }
 
 @media (min-width: 550px) {
+  .card_parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .list_parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .meet_parent {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dates_parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .meet_parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .quotes_parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   body {
     font-family: "Nunito", sans-serif;
     text-align: center;
@@ -193,11 +242,11 @@ signup-form form input[type="submit"] {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 400px 400px;
-    grid-template-columns: 400px 400px;
+        grid-template-columns: 400px 400px;
   }
   .quotes .quotes_one {
     -ms-grid-row: 1;
-    grid-row-start: 1;
+        grid-row-start: 1;
   }
   .quotes .quotes_two {
     grid-row-end: 2;
@@ -213,8 +262,8 @@ signup-form form input[type="submit"] {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 200px;
-    grid-template-rows: 200px;
-    grid-template-areas: ".dates_one .dates_two .dates_three";
+        grid-template-rows: 200px;
+        grid-template-areas: ".dates_one .dates_two .dates_three";
   }
   .dates .dates_button {
     background-color: white;
@@ -230,6 +279,7 @@ signup-form form input[type="submit"] {
     background-color: rgba(68, 66, 66, 0.445);
   }
   .meet {
+    width: 900px;
     text-align: center;
     font-size: 15px;
   }
@@ -237,8 +287,8 @@ signup-form form input[type="submit"] {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 150px;
-    grid-template-columns: 150px;
-    grid-template-areas: ".list_l1 .list_l2 .list_l3 .list_l4";
+        grid-template-columns: 150px;
+        grid-template-areas: ".list_l1 .list_l2 .list_l3 .list_l4";
   }
   .list .list_img {
     width: 160px;
@@ -247,8 +297,8 @@ signup-form form input[type="submit"] {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: ".card_iframe .card_text";
+        grid-template-rows: 1fr;
+        grid-template-areas: ".card_iframe .card_text";
   }
   .card .card_iframe {
     width: 100%;
@@ -256,6 +306,7 @@ signup-form form input[type="submit"] {
   .card .card_text {
     font-size: 15px;
     text-align: center;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
